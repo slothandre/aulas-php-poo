@@ -6,5 +6,10 @@ class Cliente {
     public string $email;
     public string $senha;
     public array $telefones;
-    
+
+    // Métodos (ou comportamentos)
+    public function exibirDados():void {
+
+    };
+
 }
