@@ -16,7 +16,9 @@
             <li>Acesso direto às propriedades</li>
             <li>Atribuição e leitura de dados</li>
             <li>Chamada de métodos</li>
+            <li>Uso do <code>$this</code> para acessar recursos dentro da própria classe</li>
         </ul>
+
         <?php
             require_once "./src/Cliente.php";
             
@@ -33,6 +35,7 @@
             $clienteA->senha = password_hash("123abc", PASSWORD_DEFAULT);
         ?>
         <hr>
+
         <h2>Dados dos objetos (acesso e leitura)</h2>
         <h3><?=$clienteA->nome?></h3>
         <p>E-mail: <?=$clienteA->email?></p>
@@ -50,6 +53,10 @@
                 <li><?=$telefone?></li>
             <?php } ?>
         </ul>
+
+        <h2>Acessando os dados através de um método</h2>
+        <?=$clienteA->exibirDados()?>
+        <?=$clienteB->exibirDados()?>
         <pre><?=var_dump($clienteA, $clienteB)?></pre>
     </main>
 </body>
