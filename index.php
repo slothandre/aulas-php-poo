@@ -29,6 +29,8 @@
             à propriedade privada "nome" */
             $clienteA->setNome("André")
         ?>
+        <!-- Usando o getter para ler/acessar dados privados -->
+        <p>Nome: <?=$clienteA->getNome()?></p>
         <pre><?=var_dump($clienteA)?></pre>
     </main>
 </body>
