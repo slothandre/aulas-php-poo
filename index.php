@@ -15,6 +15,12 @@
         <ul>
             <li>Herança (Super Classe e Sib Classe)</li>
         </ul>
+
+        <?php
+            require_once "./src/PessoaFisica.php";
+            $clientePF = new PessoaFisica;    
+        ?>
+        <pre><?=var_dump($clientePF)?></pre>
     </main>
 </body>
 </html>
