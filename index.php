@@ -21,6 +21,7 @@
 
         <?php
             require_once "./src/PessoaFisica.php";
+            require_once "./src/PessoaJuridica.php";
             $clientePF = new PessoaFisica;
 
             // Colocar um nome no Cliente PF
@@ -30,7 +31,6 @@
             $clientePF->setCpf("123.456.789-00");
 
             // Exercício
-            require_once "./src/PessoaJuridica.php";
             $clientePJ = new PessoaJuridica;
             $clientePJ->setNome("Beltrano S/A");
             $clientePJ->setEmail("blablabla@gmail.com");
@@ -40,6 +40,12 @@
         ?>
         <pre><?=var_dump($clientePF)?></pre>
         <pre><?=var_dump($clientePJ)?></pre>
+        <hr>
+        <?php
+            require_once "./src/Cliente.php";
+            $clienteGenerico = new Cliente;
+        ?>
+        <pre><?=var_dump($clienteGenerico)?></pre>
     </main>
 </body>
 </html>
