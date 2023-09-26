@@ -25,8 +25,18 @@
             $clientePF->setEmail("fulano@gmail.com");
             $clientePF->setIdade(20);
             $clientePF->setCpf("123.456.789-00");
+
+            // Exercício
+            require_once "./src/PessoaJuridica.php";
+            $clientePJ = new PessoaJuridica;
+            $clientePJ->setNome("Beltrano S/A");
+            $clientePJ->setEmail("blablabla@gmail.com");
+            $clientePJ->setAnoFundacao(2000);
+            $clientePJ->setCnpj("32.088.0001/000.41");
+            $clientePJ->setNomeFantasia("Bla Bla Bla Informática");
         ?>
         <pre><?=var_dump($clientePF)?></pre>
+        <pre><?=var_dump($clientePJ)?></pre>
     </main>
 </body>
 </html>
