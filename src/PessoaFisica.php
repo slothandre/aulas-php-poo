@@ -1,5 +1,6 @@
 <?php
-    class PessoaFisica {
+    require_once "Cliente.php";
+    class PessoaFisica extends Cliente {
         private int $idade;
         private string $cpf;
 
@@ -13,7 +14,7 @@
 
                 return $this;
         }
-        
+
         public function getCpf(): string
         {
                 return $this->cpf;
