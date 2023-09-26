@@ -13,7 +13,7 @@
     <main>
         <h2>Assuntos abordados:</h2>
         <ul>
-            <li>Herança (Super Classe e Sib Classe)</li>
+            <li>Herança (Super Classe e Sub Classe)</li>
         </ul>
 
         <?php
