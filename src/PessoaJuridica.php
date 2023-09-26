@@ -5,6 +5,10 @@
         private string $cnpj;
         private string $nomeFantasia;
 
+        public function __construct(){
+            $this->setSituacao("em análise");
+        }
+
         
         public function getAnoFundacao(): int
         {

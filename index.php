@@ -14,6 +14,9 @@
         <h2>Assuntos abordados:</h2>
         <ul>
             <li>Herança (Super Classe e Sub Classe)</li>
+            <li>Métodos/propriedades protegidos (acessíveis apenas pelas classes em que foram definidos e pelas subclasses)</li>
+            <li>Classe Abstrata</li>
+            <li>Classe Final</li>
         </ul>
 
         <?php
