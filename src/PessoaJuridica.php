@@ -8,6 +8,13 @@
         public function __construct(){
                 $this->setSituacao("em análise");
         }
+
+        public function exibirDados():void {
+                /* parent::recursos
+                Permite o acesso aos recursos da classe Pai (superclasse) */
+                parent::exibirDados();
+                echo "<p>Nome fantasia: $this->nomeFantasia</p>";
+        }
         
         public function getAnoFundacao(): int
         {
