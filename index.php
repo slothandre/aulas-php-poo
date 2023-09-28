@@ -24,10 +24,18 @@
             $cliente1->setNome("Astrogildo");
             $cliente1->setIdade(75);
 
+            $cliente2 = new PessoaFisica;
+            $cliente2->setNome("Enzo");
+            $cliente2->setIdade(20);
+
             require_once "./src/Utilitarios.php";
             Utilitarios::obterData();
         ?>
         <h2>Atendimentos do dia: <?=Utilitarios::$dataAtual?></h2>
+        <h3>Cliente: <?=$cliente1->getNome()?></h3>
+        <p>Tipo de atendimento: <?=Utilitarios::deinirAtendimento($cliente1->getIdade())?></p>
+        <h3>Cliente: <?=$cliente2->getNome()?></h3>
+        <p>Tipo de atendimento: <?=Utilitarios::deinirAtendimento($cliente2->getIdade())?></p>
     </main>
 </body>
 </html>
