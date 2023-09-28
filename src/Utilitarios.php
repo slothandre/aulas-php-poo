@@ -9,4 +9,7 @@
             Permite o acesso à propriedade estática */
             self::$dataAtual = date("d/m/Y");
         }
+        public static function deinirAtendimento(int $idade):string {
+            return $idade >= 60 ? "Prioridade" : "Normal";
+        }
     }
