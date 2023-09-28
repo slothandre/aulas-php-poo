@@ -36,6 +36,15 @@
             $clientePJ->setNomeFantasia("Bla Bla Bla Informática");
         ?>
         <hr>
+        <h2>Saída de Dados</h2>
+        <section>
+            <!-- Saída do cliente PessoaFísica -->
+            <?=$clientePF->exibirDados()?>
+        </section>
+        <section>
+            <!-- Saída do cliente PessoaJuridica -->
+            <?=$clientePJ->exibirDados()?>
+        </section>
     </main>
 </body>
 </html>
