@@ -1,4 +1,5 @@
 <?php
+namespace Tabajara;
 abstract class Cliente {
 
     // Propriedades (ou atributos)

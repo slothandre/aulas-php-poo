@@ -1,5 +1,6 @@
 <?php
     require_once "Cliente.php";
+    namespace Tabajara;
     class PessoaJuridica extends Cliente {
         private int $anoFundacao;
         private string $cnpj;

@@ -1,5 +1,6 @@
 <?php
     require_once "Cliente.php";
+    namespace Tabajara;
     class PessoaFisica extends Cliente {
         private int $idade;
         private string $cpf;
