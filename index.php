@@ -17,6 +17,12 @@
             <li>Prevenção de conflitos entre classes de mesmo nome</li>
             <li>Configurar e usar <code>namespaces</code> e <code>alias</code></li>
         </ul>
+        <?php
+            /* Só de fazer o require/importação das classes,
+            já dá erro no servidor devido a terem o mesmo nome. */
+            require_once "./src/fornecedores/Pagamento.php";
+            require_once "./src/prestadores/Pagamento.php";
+        ?>
     </main>
 </body>
 </html>
