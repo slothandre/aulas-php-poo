@@ -15,7 +15,7 @@
         <ul>
             <li>Namespaces: agrupamento e organização de recursos (classes, funções, constantes)</li>
             <li>Prevenção de conflitos entre classes de mesmo nome</li>
-            <li>Configurar e usar namespaces e alias</li>
+            <li>Configurar e usar <code>namespaces</code> e <code>alias</code></li>
         </ul>
     </main>
 </body>
