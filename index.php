@@ -23,6 +23,9 @@
 
 use Fornecedor\Pagamento;
 use Prestador\Pagamento as PrestadorPagamento;
+use Tabajara\MEI;
+use Tabajara\PessoaFisica;
+use Tabajara\PessoaJuridica;
 
             require_once "./src/fornecedores/Pagamento.php";
             require_once "./src/prestadores/Pagamento.php";
@@ -43,6 +46,41 @@ use Prestador\Pagamento as PrestadorPagamento;
         ?>
         <pre><?=var_dump($pagamentoFornecedor)?></pre>
         <pre><?=var_dump($pagamentoPrestador)?></pre>
+        <hr>
+        <!-- Exercício:
+        - Crie objetos cliente PF, cliente PJ e cliente MEI
+        - Coloque alguns dados usando setters
+        - Exiba alguns dados no HTML -->
+        <?php
+            require_once "./src/PessoaFisica.php";
+            require_once "./src/PessoaJuridica.php";
+            require_once "./src/MEI.php";
+
+            $clientePF = new PessoaFisica;
+            $clientePJ = new PessoaJuridica;
+            $clienteMEI = new MEI;
+
+            $clientePF->setNome("Zézin Geleca");
+            $clientePF->setEmail("zeca.urubu@xpto.com");
+
+            $clientePJ->setNome("Lula Molusco");
+            $clientePJ->setEmail("cabana.do.biquini@lulinha.com");
+
+            $clienteMEI->setNome("Leôncio");
+            $clienteMEI->setEmail("bolina.de.gorfe@bigodon.com");
+        ?>
+        <section>
+            <h2><?=$clientePF->getNome()?></h2>
+            <p>E-mail: <?=$clientePF->getEmail()?></p>
+        </section>
+        <section>
+            <h2><?=$clientePJ->getNome()?></h2>
+            <p>E-mail: <?=$clientePJ->getEmail()?></p>
+        </section>
+        <section>
+            <h2><?=$clienteMEI->getNome()?></h2>
+            <p>E-mail: <?=$clienteMEI->getEmail()?></p>
+        </section>
     </main>
 </body>
 </html>
