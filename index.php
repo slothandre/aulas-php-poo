@@ -24,8 +24,15 @@
             require_once "./src/prestadores/Pagamento.php";
 
             // Forma 1 de usar classes com namespaces
-            $pagamentoFornecedor = new Fornecedor\Pagamento;
-            $pagamentoPrestador = new Prestador\Pagamento; 
+            /* $pagamentoFornecedor = new Fornecedor\Pagamento;
+            $pagamentoPrestador = new Prestador\Pagamento;  */
+
+            // Forma 2 de usar classes com namespaces
+            /* use Fornecedor\Pagamento;
+            use Prestador\Pagamento as PrestadorPagamento; // ALIAS (APELIDO)
+
+            $pagamentoFornecedor = new Pagamento;
+            $pagamentoPrestador = new PrestadorPagamento; // objeto através do alias */
         ?>
         <pre><?=var_dump($pagamentoFornecedor)?></pre>
         <pre><?=var_dump($pagamentoPrestador)?></pre>
