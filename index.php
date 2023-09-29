@@ -22,7 +22,7 @@
             use Fornecedor\Pagamento;
             use Prestador\Pagamento as PrestadorPagamento;
 
-            use Tabajara\{MEI, PessoaFisica as PF, PessoaJuridica as PJ};
+            use Tabajara\{Escola, MEI, PessoaFisica as PF, PessoaJuridica as PJ};
 
             require_once "./vendor/autoload.php";
 
@@ -59,6 +59,11 @@
             <h2><?=$clienteMEI->getNome()?></h2>
             <p>E-mail: <?=$clienteMEI->getEmail()?></p>
         </section>
+        <hr>
+        <?php
+            $escola = new Escola;
+        ?>
+        <pre><?=var_dump($escola)?></pre>
     </main>
 </body>
 </html>
