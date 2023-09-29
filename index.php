@@ -23,9 +23,14 @@
 
 use Fornecedor\Pagamento;
 use Prestador\Pagamento as PrestadorPagamento;
-use Tabajara\MEI;
+
+// Use individual (um para cada classe)
+/* use Tabajara\MEI;
 use Tabajara\PessoaFisica;
-use Tabajara\PessoaJuridica;
+use Tabajara\PessoaJuridica; */
+
+// Use com uma lista de classes
+use Tabajara\{MEI, PessoaFisica as PF, PessoaJuridica as PJ};
 
             require_once "./src/fornecedores/Pagamento.php";
             require_once "./src/prestadores/Pagamento.php";
@@ -56,8 +61,8 @@ use Tabajara\PessoaJuridica;
             require_once "./src/PessoaJuridica.php";
             require_once "./src/MEI.php";
 
-            $clientePF = new PessoaFisica;
-            $clientePJ = new PessoaJuridica;
+            $clientePF = new PF;
+            $clientePJ = new PJ;
             $clienteMEI = new MEI;
 
             $clientePF->setNome("Zézin Geleca");
