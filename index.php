@@ -20,6 +20,10 @@
         <?php
             /* Só de fazer o require/importação das classes,
             já dá erro no servidor devido a terem o mesmo nome. */
+
+use Fornecedor\Pagamento;
+use Prestador\Pagamento as PrestadorPagamento;
+
             require_once "./src/fornecedores/Pagamento.php";
             require_once "./src/prestadores/Pagamento.php";
 
@@ -33,6 +37,9 @@
 
             $pagamentoFornecedor = new Pagamento;
             $pagamentoPrestador = new PrestadorPagamento; // objeto através do alias */
+
+            $pagamentoFornecedor = new Pagamento;
+            $pagamentoPrestador = new PrestadorPagamento;
         ?>
         <pre><?=var_dump($pagamentoFornecedor)?></pre>
         <pre><?=var_dump($pagamentoPrestador)?></pre>
